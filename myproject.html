@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Project</title>
+
+  <link rel="stylesheet" href="assets/fontawesome/css/all.css">
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+</head>
+<body>
+
+  <!-- NavBar start -->
+  <nav>
+    <div class="left-side">
+      <a href="index.html">
+        <img src="assets/img/logo.png" alt="logo" />
+      </a>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="myproject.html">My Project</a>
+        </li>
+      </ul>
+    </div>
+    <div class="right-side">
+      <a href="contact.html">Contact Me </a>
+    </div>
+  </nav>
+  <!-- navbar end -->
+
+ 
+  <!-- my project start -->
+  <div class="cont-box">
+    <div class="project">
+        <div class="project-form">
+          <div class="form-container">
+            <form name="form1" onsubmit="addProject(event)">
+              <h1>ADD MY PROJECT</h1>
+              <div>
+                <label for="input-project-title">Project Name</label>
+                <input id="input-project-title" />
+              </div>
+              <div class="input-date">
+                <div>
+                  <label for="input-project-dateStart">Start Date</label>
+                  <input id="input-startdate" type="date"/>
+                </div>
+                <div class="right">
+                  <label for="input-project-dateEnd">End Date</label>
+                  <input id="input-enddate" type="date" />
+                </div>
+              </div>
+              <div>
+                <label for="input-project-description">Description</label>
+                <textarea id="input-project-description"></textarea>
+              </div>
+  
+              <div>
+                <label for="input-project-technologies">Technologies</label>
+                <div class="check-container">
+                  <div class="divkiri">
+                    <label for="nodejs" class="option_item"><input type="checkbox" name="color" value="fa-brands fa-node-js" id="nodejs">
+                      Node Js
+                    </label>
+                    <label for="reactjs" class="option_item"><input type="checkbox" name="color" value="fa-brands fa-react" id="reactjs">
+                      React Js
+                    </label>
+                  </div>
+    
+                  <div class="divkanan">
+                    <label for="nextjs" class="option_item"><input type="checkbox" name="color" value="fa-brands fa-android"
+                        id="nextjs">Next Js</label>
+                    <label for="typescript" class="option_item"><input type="checkbox" name="color" value="fa-brands fa-java"
+                        id="typescript">TypeScript</label>
+                  </div>
+                </div>
+       
+              <div>
+                <label>Upload Image</label>
+                <div class="input-project-image-group">
+                  <label for="input-project-image">
+                    <p>choose</p>
+                    <img src="assets/img/file.png" alt="file" />
+                  </label>
+                  <input type="file" id="input-project-image" hidden />
+                </div>
+              </div>
+              <div class="button-group">
+                <button>Post project</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+  </div>
+  <!-- my project end -->
+
+  <!-- list project start -->
+   <!-- Display -->
+    <!-- dynamic content would be here -->
+    <div class="display-project">
+        <h1>MY PROJECT</h1>
+        <div class="projects" id="list-project">
+      <!-- dynamic content would be here -->
+          <div class="list-project">
+            <div class="header">
+              <a href="projectdetail.html"><img src="assets/img/cs1.jpg" alt="" width="100%"></a>
+              <p> <b> Dumbways Mobile App - 2022</b></p>
+              <small>durasi :  3 bulan</small>
+            </div>
+            <div class="content">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem sint et quibusdam nihil,orem ipsum dolor, sit amet consectetur adipisicing elit. Quidem sint et quibusdam nihil,Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem sint et quibusdam nihil,orem ipsum dolor, sit amet consectetur adipisicing elit. Quidem sint et quibusdam nihil,</p>
+              <p class="content-awesome">
+                <i class="fab fa-google-play"></i>
+                <i class="fab fa-android"></i>
+                <i class="fab fa-java"></i>
+              </p>
+            </div>
+            <div class="footer">
+              <div class="edit">
+                <a href="#">edit</a>
+              </div>
+              <div class="delete">
+                <a href="#">delete</a>
+              </div>
+            </div>
+            
+          </div>
+          
+        </div>
+      </div>
+  <!-- list project end -->
+
+  <script src="assets/js/myproject.js"></script>
+</body>
+</html>

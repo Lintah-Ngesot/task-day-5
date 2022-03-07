@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto+Mono:ital,wght@0,200;1,400&family=Source+Code+Pro:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: rgb(210, 210, 210);
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Navbar start */
+  nav {
+    display: flex;
+    background: #f4f3f3;
+    height: 10vh;
+    font-weight: 600;
+    font-size: 20px;
+    position: fixed;
+    width: 100%;
+    margin-top: -80px;
+  }
+  
+  nav div {
+    display: flex;
+    align-items: center;
+    flex: 50%;
+  }
+  
+  nav div.left-side {
+    padding-left: 90px;
+  }
+  
+  nav div.right-side {
+    padding-right: 90px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  nav ul li a:hover { 
+    color: red;
+  }
+
+  nav .right-side a:hover {
+    color: red;
+  }
+
+
+  nav ul {
+    list-style-type: none;
+    margin-left: 40px;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-left: 40px;
+  }
+  
+  nav ul li a {
+    color: #000000;
+    text-decoration: none;
+  }
+  
+  nav ul li a.list-active {
+    color: #ec4d37;
+    font-weight: 700;
+  }
+  
+  nav .right-side a {
+    padding: 8px 20px;
+    background-color: #0a0a0a;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    text-decoration: none;
+  }
+  /* navbar end */
+  
+  /* index start */
+  .iseng {
+    height: 700px;
+  }
+  .container-box {
+    display: flex;
+    width: 80%;
+    box-shadow: 0px 0px 10px;
+    background-color: white;
+    margin: auto;
+    margin-top: 80px;
+    border-radius: 8px;
+    padding: 50px;
+  }
+
+  .cont-box {
+    margin: auto;
+    margin-top: 80px;
+  }
+
+  .left-card {
+    width: 800px;
+  }
+
+  .left-card .text-card {
+    padding-top: 20px;
+  }
+
+  .text-card a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .left-card h1 {
+    text-align: justify;
+  }
+
+  .left-card p {
+    text-align: justify;
+    padding-right: 50px;
+  }
+
+  .left-card .icon ul {
+    display: flex;
+  }
+
+  .left-card .icon li {
+    list-style: none;
+
+  }
+
+  .left-card .icon li p {
+    margin-right: -30px;
+  }
+
+  .left-card .btn-style {
+    text-decoration: none;
+    color: white;
+    background: #0a0a0a;
+    padding: 0.5em 2em;
+    border-radius: 60px;
+    margin: 1em 0;
+    transition: 0.3s;
+    margin-right: 20px;
+  }
+
+  .left-card .icon li img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .right-card {
+    box-shadow: 0px 0px 8px;
+    border-radius: 8px;
+
+  }
+
+  .right-card img {
+    width: 300px;
+    height: 350px; 
+    margin: auto; 
+    border-radius: 8px 8px 0px 0px;
+    
+  }
+
+  .right-card h3 {
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .right-card p {
+    text-align: center;
+    padding-bottom: 15px;
+  }
+/* index end */
+
+ 
+/* my project start */
+/* form */
+.project-form {
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.project-form .form-container {
+  width: 700px;
+}
+
+.project-form .form-container h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.project-form form label {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.project-form form input,
+textarea,
+select {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 14px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  background: #f4f3f3;
+  border: 1px solid #c4c4c4;
+  border-radius: 8px;
+}
+
+.project-form form textarea {
+  height: 250px;
+  width: 100% ;
+}
+
+.project-form form .input-project-image-group {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  background: #f4f3f3;
+  border: 1px solid #c4c4c4;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.project-form form .input-project-image-group label p {
+  font-size: 25px;
+  background-color: #E4E4E4;
+  color: #898686;
+  width: 15% ;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #c4c4c4;
+  border-radius: 8px;
+
+}
+.project-form form .input-project-image-group label img {
+  margin-right: 15px;
+}
+
+.project-form form .input-project-image-group label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-form form .button-group {
+  text-align: right;
+}
+
+.project-form form button {
+  margin-top: 50px;
+  padding: 8px 20px;
+  font-size: 17px;
+  background-color: #333333 ; 
+  border-radius: 20px; 
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.form-container .input-date { 
+  display: flex;
+}
+.input-date div { 
+  flex: 50%;
+}
+.input-date div > input { 
+  width: 100%;
+}
+.input-date .right { 
+  margin-left: 50px;
+}
+
+.project-form .form-container .check-container {
+  display: flex;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.project-form .form-container .check-container .divkiri {
+  width: 250px;
+}
+
+.project-form .form-container .check-container .divkanan {
+  width: 250px;
+}
+
+.project-form .form-container .check-container .option_item {
+  display: flex;
+}
+
+.project-form .form-container .check-container input {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+}
+
+
+/* list project */
+.display-project { 
+  width: 100%;
+  background-color: white;
+}
+.display-project h1 { 
+  text-align: center;
+  padding-top: 30px;
+}
+.display-project .projects { 
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  width: 100%;
+  flex-wrap: wrap;
+
+}
+.projects .list-project { 
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px #00000040;
+  width: 30%;
+  padding: 15px;
+  
+}
+.list-project .header { 
+  font-size: 20px;
+}
+
+.list-project .header img { 
+  border-radius: 10px;
+  height: 250px;
+  object-fit: cover;
+
+}
+
+.list-project .content { 
+  margin: 20px 0px 20px 0px;
+  font-size: 15px;
+  text-align: justify;
+}
+.list-project .content .content-awesome { 
+  margin : 30px 0px 30px 0px;
+}
+.content-awesome i { 
+  margin-right: 15px;
+  font-size: 30px;
+}
+
+.list-project .footer { 
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+}
+.footer .edit{ 
+  flex: 50%;
+  background-color: #333333 ; 
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px;
+}
+.footer a { 
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+.footer .delete{ 
+  flex: 50%;
+  background-color: #333333 ; 
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px;
+
+}
+/* my project end */
+ 
+
+
+/* project detail start */
+.project-detail { 
+  padding: 50px;
+  width: 100% ;
+}
+.project-detail h1 { 
+  text-align: center;
+}
+.project-detail .project-detail-header { 
+  display: flex;
+  flex: 50% ;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.project-detail-header .left { 
+  width: 60%;
+  margin-right: 20px ;
+}
+.left > img { 
+  width: 100%;
+}
+.project-detail-header .right { 
+  width: 30%;
+  margin-left: 20px ;
+  font-size: 15px;
+}
+.right i { 
+  font-size: 30px;
+  margin: 10px 0px 10px 0px;
+}
+.right .right-top { 
+  margin-top: 20px;
+}
+.right .right-top small { 
+  padding-left: 10px;
+  font-size: 18px;
+  color: #474747;
+}
+.right .right-top .atas { 
+  padding-left: 13px;
+  font-size: 18px;
+  color: #474747;
+}
+
+
+
+.technologies-cat .tech-cat1 .texto {
+  padding-right: 46px;
+  padding-left: 10px;
+  font-size: 18px;
+  color: #474747;
+}
+
+.technologies-cat .tech-cat1 .textot {
+  padding-right: 30px;
+  padding-left: 10px;
+  font-size: 18px;
+  color: #474747;
+}
+
+.project-detail-content p {
+  text-align: justify;
+}
+/* 
+.right-bottom { 
+  margin-top: 20px;
+}
+.right-bottom h3 { 
+  margin-bottom: 10px;
+}
+.right-bottom .right-bottom-wrap{ 
+  display: flex;
+  color: black;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.right-bottom-wrap > i{ 
+  width: 40%;
+  font-size: 22px;
+  word-spacing: 1rem;
+}
+
+.project-detail-content { 
+  text-align: justify;
+} */
+/* project detail end */
