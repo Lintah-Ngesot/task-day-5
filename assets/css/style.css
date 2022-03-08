@@ -332,6 +332,11 @@ select {
   font-size: 20px;
 }
 
+.list-project .header a { 
+  text-decoration: none;
+  color: black;
+}
+
 .list-project .header img { 
   border-radius: 10px;
   height: 250px;
@@ -343,6 +348,13 @@ select {
   margin: 20px 0px 20px 0px;
   font-size: 15px;
   text-align: justify;
+}
+
+.list-project .content p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  /* text-overflow: clip; */
 }
 .list-project .content .content-awesome { 
   margin : 30px 0px 30px 0px;

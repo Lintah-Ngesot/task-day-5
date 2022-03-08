@@ -12,7 +12,6 @@ function addProject(event)  {         //==> 1
   let enddate = document.getElementById("input-enddate").value;
   let inputDescription = document.getElementById("input-project-description").value;
   let inputCategories = Array.from(document.querySelectorAll('input[type=checkbox]:checked')).map(item => item.value); 
-  
   // panggil gambar
   let img = document.getElementById("input-project-image");
   // ambil dr url yg diterima
@@ -50,8 +49,8 @@ function renderproject() {
     projectContainer.innerHTML += `
       <div class="list-project">    
         <div class="header">
-          <a id="myLink" title="Click to do something" href="project-detail.html" onclick="linkValue();"><img src="${projects[i].img}" alt=""  width="100%"></a>
-          <p> <b>${projects[i].inputTitle}</b></p>
+          <img src="assets/img/cs1.jpg" alt="" width="100%">
+          <a href="projectdetail.html" target="_blank"> <b>${projects[i].inputTitle}</b></a><br>
           <small>Duration :  ${durationTime(projects[i].startdate, projects[i].enddate)}</small>
         </div>
         <div class="content">
@@ -119,7 +118,10 @@ function durationTime(startdate, enddate) {
     let diffMonths = Math.ceil(duration / (1000 * 60 * 60 * 24 * 30));
     if (diffMonths >= 1) {
       return diffMonths + ` month `
-    }
+    } else {
+      let diffYears = Math.ceil(duration / (1000 * 60 * 60 * 24 * 30 * 12)); // ms dlm 1 thn
+      if (diffYears >= 1) {
+        return diffMonths + ` year `}}
   }
 }
 
