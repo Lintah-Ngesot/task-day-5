@@ -77,29 +77,30 @@ function renderproject() {
 
 function firstProjectContent() {
   return `
-    <div class="list-project">
-      <div class="header">
-        <img src="assets/img/cs1.jpg" alt=""  width="100%">
-        <p> <b> Dumbways Mobile App - 2022</b></p>
-        <small>Duration : 3 Month</small>
-      </div>
-      <div class="content">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem sint et quibusdam nihil,orem ipsum dolor, sit amet consectetur adipisicing elit. Quidem sint et quibusdam nihil,Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem sint et quibusdam nihil,orem ipsum dolor, sit amet consectetur adipisicing elit. Quidem sint et quibusdam nihil,</p>
-        <p class="content-awesome">
-          <i class="fab fa-google-play"></i>
-          <i class="fab fa-android"></i>
-          <i class="fab fa-java"></i>
-        </p>
-      </div>
-      <div class="footer">
-        <div class="edit">
-          <a href="#">edit</a>
-        </div>
-        <div class="delete">
-          <a href="#">delete</a>
-        </div>
-      </div>
-    </div>`
+  <div class="list-project">
+  <div class="header">
+    <img src="assets/img/cs1.jpg" alt="" width="100%">
+    <a href="projectdetail.html" target="_blank"> <b> Dumbways Mobile App - 2022</b></a><br>
+    <small>durasi :  3 bulan</small>
+  </div>
+  <div class="content">
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem sint et quibusdam nihil,orem ipsum dolor, sit amet consectetur adipisicing elit. Quidem sint et quibusdam nihil,Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem sint et quibusdam nihil,orem ipsum dolor, sit amet consectetur adipisicing elit. Quidem sint et quibusdam nihil,</p>
+    <p class="content-awesome">
+      <i class="fab fa-google-play"></i>
+      <i class="fab fa-android"></i>
+      <i class="fab fa-java"></i>
+    </p>
+  </div>
+  <div class="footer">
+    <div class="edit">
+      <a href="#">edit</a>
+    </div>
+    <div class="delete">
+      <a href="#">delete</a>
+    </div>
+  </div>
+  
+</div>`
 }
 
 
