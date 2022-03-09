@@ -49,7 +49,7 @@ function renderproject() {
     projectContainer.innerHTML += `
       <div class="list-project">    
         <div class="header">
-          <img src="assets/img/cs1.jpg" alt="" width="100%">
+          <img src="${projects[i].img}" alt="" width="100%">
           <a href="projectdetail.html" target="_blank"> <b>${projects[i].inputTitle}</b></a><br>
           <small>Duration :  ${durationTime(projects[i].startdate, projects[i].enddate)}</small>
         </div>
